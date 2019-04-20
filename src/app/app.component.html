@@ -13,9 +13,13 @@
 
 <p class="comp-separator">---------------</p>
 <app-auth [userName]="name"
-          [userAge] = "age">
+  [userAge] = "age">
 </app-auth>
-<input type="number" [(ngModel)]="age"/>
+<span>Set Age: </span><input id="age_change" type="number" [(ngModel)]="age"/>
 
 <p class="comp-separator">---------------</p>
-<app-change></app-change>
+<p>Clicks count: {{ clicks }}</p>
+<app-change (onChanged)="onChanged($event)" [(userName)]="name"></app-change>
+<div>Choosed name: {{name}}</div>
+
+<p class="comp-separator">---------------</p>

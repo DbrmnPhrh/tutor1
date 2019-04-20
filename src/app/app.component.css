@@ -5,3 +5,7 @@ p {
 .comp-separator {
   color: red;
 }
+
+#age_change {
+  width: 50px;
+}

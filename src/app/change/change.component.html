@@ -1,2 +1,5 @@
-<button (click)="change(true)"></button>
-<button (click)="change(false)"></button>
+<p>click2 component:</p>
+<button (click)="change(true)">+</button>
+<button (click)="change(false)">-</button>
+<br>
+<input [ngModel]="userName" (ngModelChange)="onNameChange($event)">

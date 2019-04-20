@@ -11,4 +11,13 @@ export class ChangeComponent {
     this.onChanged.emit(increased);
   }
 
+  @Input() userName:string;
+  @Output() userNameChange = new EventEmitter<string>();
+
+  onNameChange(model: string) {
+    this.userName = model;
+    this.userNameChange.emit(model);
+  }
+
+
 }
