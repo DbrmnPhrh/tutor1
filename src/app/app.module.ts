@@ -8,10 +8,11 @@ import { ClickComponent } from './click/click.component';
 import { InputComponent } from './input/input.component';
 import { ChildComponent } from './child/child.component';
 import { AuthComponent } from './auth/auth.component';
+import { ChangeComponent } from './change/change.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, ClickComponent, InputComponent, ChildComponent, AuthComponent ],
+  declarations: [ AppComponent, HelloComponent, ClickComponent, InputComponent, ChildComponent, AuthComponent, ChangeComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
