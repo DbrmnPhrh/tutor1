@@ -1,0 +1,11 @@
+<hello framework_name="{{ framework_name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<app-click></app-click>
+<app-input></app-input>
+<app-child><p>This is a child component</p></app-child>
+<app-auth [userName]="name"
+          [userAge] = "age">
+</app-auth>
+<input type="number" [(ngModel)]="age"/>
