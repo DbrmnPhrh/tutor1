@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-change',
-  templateUrl: './change.component.html',
-  styleUrls: ['./change.component.css']
+  selector: 'app-click2',
+  templateUrl: './click2.component.html',
+  styleUrls: ['./click2.component.css']
 })
 export class ChangeComponent {
   @Output() onChanged = new EventEmitter<boolean>();
