@@ -15,4 +15,6 @@ export class AppComponent  {
       if (this.clicks > 10) { this.clicks = 10 }
       else if (this.clicks < 0) { this.clicks = 0 };
   }
+
+  constructor(){ this.log(`constructor`); }
 }
