@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   templateUrl: './click2.component.html',
   styleUrls: ['./click2.component.css']
 })
-export class ChangeComponent {
+export class Click2Component {
   @Output() onChanged = new EventEmitter<boolean>();
   change(increased:any) {
     this.onChanged.emit(increased);
